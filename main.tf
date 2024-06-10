@@ -184,7 +184,7 @@ resource "aws_ecs_task_definition" "hello_world_task" {
 
   container_definitions = jsonencode([{
     name      = "hello-world-app"
-    image     = "hello-world:latest"
+    image     = "raviiai/hello_world:latest"
     essential = true
     portMappings = [{
       containerPort = 3000
